@@ -1,0 +1,41 @@
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.facebook.react:react-native:+'
+    // compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    // compile 'com.squareup.okio:okio:1.13.0'
+    // compile 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+     implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+}
+  

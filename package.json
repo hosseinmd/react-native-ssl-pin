@@ -1,0 +1,23 @@
+{
+  "name": "react-native-ssl-pin",
+  "version": "0.0.1",
+  "description": "React-Native Ssl pinning using OkHttp 3 in Android, and AFNetworking on iOS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "types": "./index.d.ts",
+  "author": "Hossein Mohammadi",
+  "license": "MIT",
+  "homepage": "https://github.com/hosseinmd/react-native-ssl-pin#README",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hosseinmd/react-native-ssl-pin.git"
+  }
+}
