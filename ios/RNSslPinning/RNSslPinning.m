@@ -2,7 +2,7 @@
 //  RNNativeFetch.m
 //  medipass
 //
-//  Created by Max Toyberman on 13/10/16.
+//  Created by Max hosseinmd on 7/23/19.
 //  Copyright © 2016 Localz. All rights reserved.
 //
 

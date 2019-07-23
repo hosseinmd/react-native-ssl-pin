@@ -1,4 +1,4 @@
-package com.toyberman;
+package com.hosseinmd;
 
 import android.support.annotation.NonNull;
 
@@ -13,7 +13,7 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableNativeMap;
 import com.facebook.react.modules.network.ForwardingCookieHandler;
-import com.toyberman.Utils.OkHttpUtils;
+import com.hosseinmd.Utils.OkHttpUtils;
 
 import org.json.JSONException;
 

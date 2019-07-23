@@ -1,4 +1,4 @@
-package com.toyberman.Utils;
+package com.hosseinmd.Utils;
 
 import android.content.Context;
 import android.net.Uri;
@@ -6,7 +6,7 @@ import android.net.Uri;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableType;
-import com.toyberman.BuildConfig;
+import com.hosseinmd.BuildConfig;
 
 import org.json.JSONException;
 
@@ -34,7 +34,7 @@ import okhttp3.RequestBody;
 import okhttp3.logging.HttpLoggingInterceptor;
 
 /**
- * Created by Max Toyberman on 2/11/18.
+ * Created by Max hosseinmd on 7/23/19.
  */
 
 public class OkHttpUtils {

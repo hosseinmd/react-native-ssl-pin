@@ -1,10 +1,10 @@
-package com.toyberman.Utils;
+package com.hosseinmd.Utils;
 
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReadableMapKeySetIterator;
 
 
-import com.toyberman.BuildConfig;
+import com.hosseinmd.BuildConfig;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,7 +15,7 @@ import java.io.OutputStream;
 import okhttp3.Request;
 
 /**
- * Created by Max Toyberman on 2/5/18.
+ * Created by Max hosseinmd on 7/23/19.
  */
 
 public class Utilities {
