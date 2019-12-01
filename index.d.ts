@@ -12,9 +12,6 @@ export namespace ReactNativeSSLPinning {
         credentials?: string,
         headers?: Header;
         method?: 'DELETE' | 'GET' | 'POST' | 'PUT',
-        timeoutInterval?: number,
-        readTimeout?: number,
-        writeTimeout?: number,
         tag: string,
     }
 
@@ -28,6 +25,10 @@ export namespace ReactNativeSSLPinning {
     interface pinningOptions {
         trust: boolean
         certs: string[],
+        timeoutInterval?: number,
+        connectTimeout?: number,
+        readTimeout?: number,
+        writeTimeout?: number,
     }
 }
 

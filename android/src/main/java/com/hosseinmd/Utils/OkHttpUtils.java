@@ -98,6 +98,11 @@ public class OkHttpUtils {
                         .writeTimeout(writeTimeout, TimeUnit.MILLISECONDS);
             }
 
+            if (options.hasKey("connectTimeout")) {
+                int connectTimeout = options.getInt("connectTimeout");
+                clientBuilder
+                        .connectTimeout(connectTimeout, TimeUnit.MILLISECONDS);
+            }
 
             if (BuildConfig.DEBUG) {
                 clientBuilder.addInterceptor(logging);
