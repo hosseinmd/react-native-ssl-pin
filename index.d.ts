@@ -13,6 +13,8 @@ export namespace ReactNativeSSLPinning {
         headers?: Header;
         method?: 'DELETE' | 'GET' | 'POST' | 'PUT',
         timeoutInterval?: number,
+        readTimeout?: number,
+        writeTimeout?: number,
         tag: string,
     }
 

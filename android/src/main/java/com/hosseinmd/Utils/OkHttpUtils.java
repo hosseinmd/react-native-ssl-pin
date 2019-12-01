@@ -86,10 +86,16 @@ public class OkHttpUtils {
 
             OkHttpClient.Builder clientBuilder = new OkHttpClient.Builder();
 
-            if (options.hasKey("timeoutInterval")) {
-                int timeout = options.getInt("timeoutInterval");
+            if (options.hasKey("readTimeout")) {
+                int readTimeout = options.getInt("readTimeout");
                 clientBuilder
-                        .readTimeout(timeout, TimeUnit.MILLISECONDS);
+                        .readTimeout(readTimeout, TimeUnit.MILLISECONDS);
+            }
+
+            if (options.hasKey("writeTimeout")) {
+                int writeTimeout = options.getInt("writeTimeout");
+                clientBuilder
+                        .writeTimeout(writeTimeout, TimeUnit.MILLISECONDS);
             }
 
 
