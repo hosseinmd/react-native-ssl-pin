@@ -4,11 +4,11 @@
 React-Native Ssl pinning using OkHttp 3 in Android, and AFNetworking on iOS. 
 ## Getting started
 
-`$ npm install react-native-ssl-pinning --save`
+`$ npm install react-native-ssl-pin --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-ssl-pinning`
+`$ react-native link react-native-ssl-pin`
 
 ### Manual installation
 
@@ -27,12 +27,12 @@ React-Native Ssl pinning using OkHttp 3 in Android, and AFNetworking on iOS.
   - Add `new RNSslPinningPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-ssl-pinning'
-  	project(':react-native-ssl-pinning').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-ssl-pinning/android')
+  	include ':react-native-ssl-pin'
+  	project(':react-native-ssl-pin').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-ssl-pin/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-ssl-pinning')
+      compile project(':react-native-ssl-pin')
   	```
 
 
@@ -51,7 +51,7 @@ openssl x509 -in mycert.pem -outform der -out mycert.cer
 #### Android
  -  Place your .cer files under src/main/assets/.
 ```javascript
-import {fetch, SSLPinning, cancel, removeCookieByName} from 'react-native-ssl-pinning';
+import {fetch, SSLPinning, cancel, removeCookieByName} from 'react-native-ssl-pin';
 
  SSLPinning(url, { trust: true })
 //or
